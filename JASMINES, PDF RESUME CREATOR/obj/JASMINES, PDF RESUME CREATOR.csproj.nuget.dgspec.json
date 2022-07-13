@@ -44,6 +44,10 @@
         "net461": {
           "targetAlias": ".NETFramework,Version=v4.6.1",
           "dependencies": {
+            "Microsoft.Net.Http": {
+              "target": "Package",
+              "version": "[2.2.29, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"

@@ -64,7 +64,6 @@
             this.ClientSize = new System.Drawing.Size(436, 317);
             this.Controls.Add(this.ButtGEN);
             this.Controls.Add(this.LblTITLE);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "F1";
             this.Text = "PDF RESUME CREATOR";
             this.Load += new System.EventHandler(this.F1_Load);

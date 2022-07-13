@@ -59,7 +59,9 @@ namespace JASMINES__PDF_RESUME_CREATOR
             }
             var ResumeJson = JsonConvert.DeserializeObject<RESUME>(jsonFile);
 
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
             string Firstname = ResumeJson.Firstname;
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
             string Lastname = ResumeJson.Lastname;  
             string Email = ResumeJson.Email;    
             string Phone = ResumeJson.Phone;    
@@ -83,11 +85,8 @@ namespace JASMINES__PDF_RESUME_CREATOR
             string SoftwareSkill2 = ResumeJson.SoftwareSkill2;  
             string SoftwareSkill3 = ResumeJson.SoftwareSkill3;  
             string HardwareSkill4 = ResumeJson.HardwareSkill4;
-            string SoftwareSkill5 = ResumeJson.SoftwareSkill5;      
+            string SoftwareSkill5 = ResumeJson.SoftwareSkill5;
 
-           
-   
-            
         }
     }
 }
