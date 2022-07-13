@@ -91,7 +91,18 @@ namespace JASMINES__PDF_RESUME_CREATOR
             string HardwareSkill4 = ResumeJson.HardwareSkill4;
             string SoftwareSkill5 = ResumeJson.SoftwareSkill5;
 
-           
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.InitialDirectory = @"C:\Users\John Lloyd\Documents\Resume save";
+                saveFileDialog.FileName = Lastname + " " + Firstname + ".pdf";
+                saveFileDialog.Filter = "PDF|*.pdf";
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    
+                }
+            }
+            Application.Restart();
+            Environment.Exit(0);
         }
     }
 }
