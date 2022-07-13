@@ -52,7 +52,39 @@ namespace JASMINES__PDF_RESUME_CREATOR
 
         private void ButtGEN_Click(object sender, EventArgs e)
         {
-                  
+            string jsonFromFile;
+            using (var reader = new StreamReader(_fileName))
+            {
+                jsonFromFile = reader.ReadToEnd();  
+            }
+            var ResumeFromJson = JsonConvert.DeserializeObject<RESUME>(jsonFromFile);
+
+            string Firstname = ResumeFromJson.Firstname;
+            string Lastname = ResumeFromJson.Lastname;  
+            string Email = ResumeFromJson.Email;    
+            string Phone = ResumeFromJson.Phone;    
+            string Website = ResumeFromJson.Website;    
+
+            string Street1 = ResumeFromJson.Street1;        
+            string Street2 = ResumeFromJson.Street2;        
+            string Province = ResumeFromJson.Province;  
+            string Municipality = ResumeFromJson.Municipality;
+            string PostalCode = ResumeFromJson.PostalCode; 
+            string Region = ResumeFromJson.Region;  
+
+            string College = ResumeFromJson.College;    
+            string CollegeGraduated = ResumeFromJson.CollegeGraduated;  
+            string HighSchool = ResumeFromJson.HighSchool;
+            string HighSchoolGraduated = ResumeFromJson.HighSchoolGraduated;        
+
+            string Award = ResumeFromJson.Award;    
+
+            string Skill1 = ResumeFromJson.Skill1;  
+            string Skill2 = ResumeFromJson.Skill2;  
+            string Skill3 = ResumeFromJson.Skill3;  
+            string Skill4 = ResumeFromJson.Skill4;
+            string Skill5 = ResumeFromJson.Skill5;      
+
         }
     }
 }
