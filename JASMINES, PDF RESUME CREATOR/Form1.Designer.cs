@@ -47,7 +47,7 @@
             // 
             this.ButtGEN.BackColor = System.Drawing.Color.Khaki;
             this.ButtGEN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ButtGEN.Font = new System.Drawing.Font("Britannic Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtGEN.Font = new System.Drawing.Font("Cooper Black", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtGEN.Location = new System.Drawing.Point(302, 254);
             this.ButtGEN.Name = "ButtGEN";
             this.ButtGEN.Size = new System.Drawing.Size(109, 38);

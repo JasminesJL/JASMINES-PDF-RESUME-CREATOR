@@ -36,11 +36,11 @@ namespace JASMINES__PDF_RESUME_CREATOR
             public string HighSchool { get; set; }  
             public string HighSchoolGraduated { get; set; } 
             public string Award { get; set; }   
-            public string Skill1 { get; set; }  
-            public string Skill2 { get; set; }  
-            public string Skill3 { get; set; }  
-            public string Skill4 { get; set; }  
-            public string Skill5 { get; set; }  
+            public string SoftwareSkill1 { get; set; }  
+            public string SoftwareSkill2 { get; set; }  
+            public string SoftwareSkill3 { get; set; }  
+            public string HardwareSkill4 { get; set; }  
+            public string SoftwareSkill5 { get; set; }  
 
 
         }
@@ -79,11 +79,11 @@ namespace JASMINES__PDF_RESUME_CREATOR
 
             string Award = ResumeJson.Award;    
 
-            string Skill1 = ResumeJson.Skill1;  
-            string Skill2 = ResumeJson.Skill2;  
-            string Skill3 = ResumeJson.Skill3;  
-            string Skill4 = ResumeJson.Skill4;
-            string Skill5 = ResumeJson.Skill5;      
+            string SoftwareSkill1 = ResumeJson.SoftwareSkill1;  
+            string SoftwareSkill2 = ResumeJson.SoftwareSkill2;  
+            string SoftwareSkill3 = ResumeJson.SoftwareSkill3;  
+            string HardwareSkill4 = ResumeJson.HardwareSkill4;
+            string SoftwareSkill5 = ResumeJson.SoftwareSkill5;      
 
         }
     }
