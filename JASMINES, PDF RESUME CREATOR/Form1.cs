@@ -35,6 +35,8 @@ namespace JASMINES__PDF_RESUME_CREATOR
             public string CollegeGraduated { get; set; }  
             public string HighSchool { get; set; }  
             public string HighSchoolGraduated { get; set; } 
+            public string Elementary { get; set; }  
+            public string ElementaryGraduated { get; set; } 
             public string Award { get; set; }   
             public string SoftwareSkill1 { get; set; }  
             public string SoftwareSkill2 { get; set; }  
@@ -77,7 +79,9 @@ namespace JASMINES__PDF_RESUME_CREATOR
             string College = ResumeJson.College;    
             string CollegeGraduated = ResumeJson.CollegeGraduated;  
             string HighSchool = ResumeJson.HighSchool;
-            string HighSchoolGraduated = ResumeJson.HighSchoolGraduated;        
+            string HighSchoolGraduated = ResumeJson.HighSchoolGraduated;  
+            string Elementary = ResumeJson.Elementary;  
+            string ElementaryGraduated = ResumeJson.ElementaryGraduated;
 
             string Award = ResumeJson.Award;    
 
@@ -87,6 +91,7 @@ namespace JASMINES__PDF_RESUME_CREATOR
             string HardwareSkill4 = ResumeJson.HardwareSkill4;
             string SoftwareSkill5 = ResumeJson.SoftwareSkill5;
 
+           
         }
     }
 }

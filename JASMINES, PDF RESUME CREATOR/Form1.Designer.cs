@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F1));
             this.LblTITLE = new System.Windows.Forms.Label();
             this.ButtGEN = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -39,9 +38,9 @@
             this.LblTITLE.Font = new System.Drawing.Font("Britannic Bold", 18F);
             this.LblTITLE.Location = new System.Drawing.Point(12, 24);
             this.LblTITLE.Name = "LblTITLE";
-            this.LblTITLE.Size = new System.Drawing.Size(157, 27);
+            this.LblTITLE.Size = new System.Drawing.Size(263, 27);
             this.LblTITLE.TabIndex = 0;
-            this.LblTITLE.Text = "Generate PDF";
+            this.LblTITLE.Text = "GENERATE PDF RESUME";
             // 
             // ButtGEN
             // 
@@ -60,7 +59,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkOrange;
+            this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(436, 317);
             this.Controls.Add(this.ButtGEN);
             this.Controls.Add(this.LblTITLE);
