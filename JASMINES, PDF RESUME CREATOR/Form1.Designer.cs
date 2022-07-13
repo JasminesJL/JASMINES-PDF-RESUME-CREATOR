@@ -54,6 +54,7 @@
             this.ButtGEN.TabIndex = 1;
             this.ButtGEN.Text = "Generate";
             this.ButtGEN.UseVisualStyleBackColor = false;
+            this.ButtGEN.Click += new System.EventHandler(this.ButtGEN_Click);
             // 
             // F1
             // 
@@ -66,6 +67,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "F1";
             this.Text = "PDF RESUME CREATOR";
+            this.Load += new System.EventHandler(this.F1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
