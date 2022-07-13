@@ -98,7 +98,38 @@ namespace JASMINES__PDF_RESUME_CREATOR
                 saveFileDialog.Filter = "PDF|*.pdf";
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
+                    PdfDocument pdf = new PdfDocument();
+                    pdf.Info.Title = Lastname + "_" + "Resume";
+                    PdfPage page = pdf.AddPage();
+
+
+                    XGraphics graph = XGraphics.FromPdfPage(page);
+
+                    XFont bigfont = new XFont("Garet", 18, XFontStyle.Bold);
+                    XFont smallfont = new XFont("Garet", 14, XFontStyle.Regular);
+                    XFont titlefont = new XFont("Garet", 35, XFontStyle.Bold);
+
+                    XPen pen = new XPen(XColors.Khaki);
+                    XPen linerleft = new XPen(XColors.Gold); 
+                    XPen linerright = new XPen(XColors.Gold);
+
+
+                    graph.DrawRoundedRectangle(XBrushes.Linen, 0, 0, page.Width.Point, page.Height.Point, 30, 20);
+                    graph.DrawRectangle(pen, 0, 0, page.Width.Point, page.Height.Point);
+
+
+                    graph.DrawString("JOHN LLOYD JASMINES", bigfont, XBrushes.Black, new XRect(0, 20, page.Width.Point - 20, page.Height.Point - 50), XStringFormats.TopRight);
+
+                  
+                    int marginleft = 25;
+                    int initialleft = 200;
                     
+
+                    string png = @"C:\Users\John Lloyd\Downloads\Jasmines Lloyd.png";
+                    XImage image = XImage.FromFile(png);
+                    graph.DrawImage(image, marginleft, 50, 150, 150);
+
+
                 }
             }
             Application.Restart();
