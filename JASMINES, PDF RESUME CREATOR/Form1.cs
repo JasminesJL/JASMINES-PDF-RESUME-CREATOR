@@ -213,6 +213,7 @@ namespace JASMINES__PDF_RESUME_CREATOR
 
                     pdf.Save(saveFileDialog.FileName);
                 }
+                MessageBox.Show("THE PDF HAS BEEN GENERATE!");
             }
             Application.Restart();
             Environment.Exit(0);
