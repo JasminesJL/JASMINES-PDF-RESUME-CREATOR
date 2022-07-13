@@ -1,6 +1,6 @@
 ﻿namespace JASMINES__PDF_RESUME_CREATOR
 {
-    partial class Form1
+    partial class F1
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F1));
+            this.LblTITLE = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // LblTITLE
+            // 
+            this.LblTITLE.AutoSize = true;
+            this.LblTITLE.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblTITLE.Location = new System.Drawing.Point(159, 57);
+            this.LblTITLE.Name = "LblTITLE";
+            this.LblTITLE.Size = new System.Drawing.Size(157, 27);
+            this.LblTITLE.TabIndex = 0;
+            this.LblTITLE.Text = "Generate PDF";
+            // 
+            // F1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.Color.DarkOrange;
+            this.ClientSize = new System.Drawing.Size(509, 366);
+            this.Controls.Add(this.LblTITLE);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "F1";
+            this.Text = "PDF RESUME CREATOR";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private Label LblTITLE;
     }
 }
