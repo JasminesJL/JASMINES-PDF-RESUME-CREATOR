@@ -52,38 +52,38 @@ namespace JASMINES__PDF_RESUME_CREATOR
 
         private void ButtGEN_Click(object sender, EventArgs e)
         {
-            string jsonFromFile;
+            string jsonFile;
             using (var reader = new StreamReader(_fileName))
             {
-                jsonFromFile = reader.ReadToEnd();  
+                jsonFile = reader.ReadToEnd();  
             }
-            var ResumeFromJson = JsonConvert.DeserializeObject<RESUME>(jsonFromFile);
+            var ResumeJson = JsonConvert.DeserializeObject<RESUME>(jsonFile);
 
-            string Firstname = ResumeFromJson.Firstname;
-            string Lastname = ResumeFromJson.Lastname;  
-            string Email = ResumeFromJson.Email;    
-            string Phone = ResumeFromJson.Phone;    
-            string Website = ResumeFromJson.Website;    
+            string Firstname = ResumeJson.Firstname;
+            string Lastname = ResumeJson.Lastname;  
+            string Email = ResumeJson.Email;    
+            string Phone = ResumeJson.Phone;    
+            string Website = ResumeJson.Website;    
 
-            string Street1 = ResumeFromJson.Street1;        
-            string Street2 = ResumeFromJson.Street2;        
-            string Province = ResumeFromJson.Province;  
-            string Municipality = ResumeFromJson.Municipality;
-            string PostalCode = ResumeFromJson.PostalCode; 
-            string Region = ResumeFromJson.Region;  
+            string Street1 = ResumeJson.Street1;        
+            string Street2 = ResumeJson.Street2;        
+            string Province = ResumeJson.Province;  
+            string Municipality = ResumeJson.Municipality;
+            string PostalCode = ResumeJson.PostalCode; 
+            string Region = ResumeJson.Region;  
 
-            string College = ResumeFromJson.College;    
-            string CollegeGraduated = ResumeFromJson.CollegeGraduated;  
-            string HighSchool = ResumeFromJson.HighSchool;
-            string HighSchoolGraduated = ResumeFromJson.HighSchoolGraduated;        
+            string College = ResumeJson.College;    
+            string CollegeGraduated = ResumeJson.CollegeGraduated;  
+            string HighSchool = ResumeJson.HighSchool;
+            string HighSchoolGraduated = ResumeJson.HighSchoolGraduated;        
 
-            string Award = ResumeFromJson.Award;    
+            string Award = ResumeJson.Award;    
 
-            string Skill1 = ResumeFromJson.Skill1;  
-            string Skill2 = ResumeFromJson.Skill2;  
-            string Skill3 = ResumeFromJson.Skill3;  
-            string Skill4 = ResumeFromJson.Skill4;
-            string Skill5 = ResumeFromJson.Skill5;      
+            string Skill1 = ResumeJson.Skill1;  
+            string Skill2 = ResumeJson.Skill2;  
+            string Skill3 = ResumeJson.Skill3;  
+            string Skill4 = ResumeJson.Skill4;
+            string Skill5 = ResumeJson.Skill5;      
 
         }
     }
